@@ -1,0 +1,46 @@
+/*  very small devices */
+@media only screen and (max-width : 240px)  {
+    #beer_result_wrap { width: 86%; font-size: 1.5em; max-height: 60%; margin-left: 7%; }
+    #beer_result_bad p, #beer_result_good p { font-size: 14px !important; }
+    #close_beer_result, #send_location { font-size: 16px; }
+    #check_for_a_beer { font-size: 1.1em; }
+    #nav a { padding: 0.7em 0.6em !important; }
+    .countdownHolder { font-size: 1.5em; }
+}
+
+/*  small devices */
+@media only screen and (max-width : 310px)  {
+    #beer_result_wrap { width: 90%; font-size: 2.1em; max-height: 72%; margin-left: 5%; }
+    #beer_result_bad p, #beer_result_good p { font-size: 19px !important; }
+    #close_beer_result, #send_location { font-size: 19px; }
+    #check_for_a_beer { font-size: 1.3em; }
+    .countdownHolder { font-size: 1.8em; }
+}
+
+/*  smartphones */
+@media only screen and (max-width : 400px)  {
+    .countdownHolder { font-size: 2em; }
+}
+
+
+
+/**** min-width 640 ****/
+@media only screen and (min-width : 640px)  {
+    body { min-width:640px; }
+    .container { max-width:95%; }
+    .\38 u { text-align: center !important; }
+    #beer_big img, #top span#beer_big { max-width: 100%; }
+    #check_for_a_beer { padding: 1.2em 1em; margin-top:1em; }
+    #load-more { float: none; width: 50%; margin-left: 3.2%; margin-top: 1em; }
+    #beer_result_wrap { height: 360px; font-size: 3em; padding-top: 1em; }
+}
+
+
+/**** min-width 1024 ****/
+@media only screen and (min-width : 1024px)  {
+   body { 
+       width:1024px; 
+       box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
+       margin: auto;
+   }
+}

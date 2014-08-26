@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kein Bier vor vier!</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Kein Bier vor Vier" />
+		<meta name="keywords" content="Kein Bier vor Vier" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Bastian Vennemann">
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrolly.min.js"></script>
+        <script type="text/javascript" src="js/jquery.countdown.js"></script>
+		<script type="text/javascript" src="js/jquery-mobile-touch.min.js"></script>
+        <script type="text/javascript" src="js/instafeed.min.js"></script>
+        <script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-mobile.css" />
+		</noscript>
+        <link rel="stylesheet" href="css/media-queries.css" />
+        <!-- settings for iOS-Safari Web-App //-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="res/icon/ios_webapp/touch-icon-iphone.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="res/icon/ios_webapp/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="res/icon/ios_webapp/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="res/icon/ios_webapp/touch-icon-ipad-retina.png">
+	</head>
+	<body>
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top" alt="Home" title="Home"><span class="icon fa-home"></span></a></li>
+                    <li><a href="#einstellungen" alt="Extras" title="Extras und Einstellungen"><span class="icon fa-cog"></span></a></li>
+                    <li><a href="#instagram" alt="Instagram" title="Instagram"><span class="icon fa-image"></span></a></li>
+                    <li><a href="#contact" alt="About" title="About"><span class="icon fa-info"></span></a></li>
+				</ul>
+			</nav>
+        <!-- dimmer //-->
+			<div class="overlayBG" id="overlay"></div>
+		<!-- Home -->
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u">
+							<span class="image fit" id="beer_big"><img src="images/beer.png" alt="Kein Bier vor vier" /></span>
+						</div>
+						<div class="8u">
+							<header>
+								<h1><strong>Bier</strong> Durst?</h1>
+							</header>
+							
+                            <div id="beer_result_wrap">
+                                <div class="loading"></div>
+                                <div id="beer_result_good">
+                                </div>
+                                <div id="beer_result_bad">
+                                </div>
+                                <span id="close_beer_result" class="button big scrolly">Schließen</span>
+                            </div>
+							<a href="#" id="check_for_a_beer" class="button big scrolly">Ist es Zeit für ein Bier?</a>
+                            <div id="werbung">
+                                <script type="text/javascript" src="http://ad.leadboltads.net/show_app_ad.js?section_id=135084265"></script>
+                            </div>
+						</div>
+					</div>
+				</article>
+			</div>
+		<!-- Einstellungen und Extras -->
+			<div class="wrapper style2">
+				<article id="einstellungen">
+					<header>
+						<h2>Extras und Einstellungen.</h2>
+						<p>Hier kannst du nützliche Einstellungen vornehmen.</p>
+					</header>
+					<div class="container">
+						<div class="row">
+                        <!-- Sound Volume //-->
+							<div class="6u">
+								<section class="box style1" id="volume">
+                                    <span class="icon featured fa-volume-off" id="icon_volume_off"></span>
+									<span class="icon featured fa-volume-up" id="icon_volume_on"></span>
+									<h3>Volume</h3>
+                                    <p class="text_volume"></p>
+								</section>
+							</div>
+                        
+                            <div class="6u">
+								<section class="box style1" id="cal_entry">
+									<span class="icon featured fa-calendar-o" id="cal_symbol"></span>
+									<h3>Kalender-Eintrag</h3>
+									<p>Klicke hier, um um Punkt vier an dein Bier erinnert zu werden.<br /></p>
+								</section>
+							</div>
+							<div id="cal_location">
+								<span id="close_cal_location" class="icon fa-times-circle"></span>
+								<p>Bitte gib einen Ort ein, an dem du dein Bier genießen möchtest:</p>
+								<input type="text" name="cal_input_location" id="cal_input_location" placeholder="Location" /><br /><br />
+								<span id="send_location" class="button big scrolly">Erinnerung setzen</span>
+							</div>
+							<div class="12u" id="countdown_wrapper">
+								<section class="box style1" id="countdown">
+									<span class="icon featured fa-clock-o"></span>
+									<h3>Countdown</h3>
+									<p id="countdown_hint">Klicke hier, um einen Countdown zu starten.</p>
+                                    <div id="countdown_show" class="countdownHolder"></div>
+								</section>
+							</div>
+						</div>
+					</div>
+					<footer>
+                        <p></p>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Instagram -->
+			<div class="wrapper style1">
+				<article class="container" id="instagram">
+					<header>
+						<h2>Instagram.</h2>
+						<p>Lad' Bilder bei Instagram mit dem Hashtag #keinbiervorvier hoch.</p>
+					</header>
+					<div class="row">
+                        <div id="instafeed" class="12u"></div>
+                        <span id="load-more" class="button scrolly">Mehr</span>
+					</div>
+				</article>
+			</div>
+        
+		<!-- About -->
+			<div class="wrapper style4">
+				<article id="contact" class="container small">
+					<header>
+						<h2>About.</h2>
+						<p>Mit der App "Kein Bier vor vier" verpasst du nie wieder dein wohlverdientes Feierabend-Bier!</p>
+						<p>Prüfe mit dieser herausragenden App, ob es schon an der Zeit ist, einen löblichen <strong>Gerstensaft</strong> zu konsumieren.</p>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+								<hr />
+								<h3>Teile diese app.</h3>
+								<ul class="social">
+                                    <li><button class="icon fa-facebook" onclick="window.plugins.socialsharing.shareViaFacebook('Diese App müsst ihr euch unbedingt holen: https://play.google.com/store/apps/details?id=us.vennemann.bier', null, null, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})"><span class="label">Facebook</span></button></li>
+                                    <li><button class="icon fa-twitter" onclick="window.plugins.socialsharing.shareViaTwitter('Diese App müsst ihr euch unbedingt holen: Kein Bier vor vier', null, 'https://play.google.com/store/apps/details?id=us.vennemann.bier')"><span class="label">Twitter</span></button></li>
+                                    <li><button class="icon fa-share-alt" onclick="window.plugins.socialsharing.share('Diese App musst du dir unbedingt holen: https://play.google.com/store/apps/details?id=us.vennemann.bier', 'App: Kein Bier vor vier')"><span class="label">Share</span></button></li>
+								</ul>
+								<hr />
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<h3>Datenschutz.</h3>
+								<p class="datenschutz"><strong>Kalender:</strong> Es werden zu keiner Zeit mit dieser App Kalender-Daten gelesen. Die <em>Kalender</em>-Berechtigungen dienen ausschließlich dem Hinzufügen von Einträgen mit der obigen Funktion "Kalender-Eintrag".</p>
+								<hr />
+							</div>
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; vennemann.us &middot; 2014</li>
+							<li>Design-Inspiration: HTML5 UP</li>
+						</ul>
+					</footer>
+				</article>
+			</div>
+			<div class='toast'>
+				<div id="toast_progress"></div>
+				<span id="toast_msg">Toast Msg</span>
+			</div>
+			<!-- audio id muss == filename sein //-->
+			<!-- success sounds -->
+			<audio id="success_sound1">
+				<source src="sounds/success_sound1.mp3"></source>
+			</audio>
+			<audio id="success_sound2">
+				<source src="sounds/success_sound2.mp3"></source>
+			</audio>
+			<audio id="success_sound3">
+				<source src="sounds/success_sound3.mp3"></source>
+			</audio>
+			<audio id="success_sound4">
+				<source src="sounds/success_sound4.mp3"></source>
+			</audio>
+			<audio id="success_sound5">
+				<source src="sounds/success_sound5.mp3"></source>
+			</audio>
+			<audio id="success_sound6">
+				<source src="sounds/success_sound6.mp3"></source>
+			</audio>
+			<!-- fail sounds -->
+			<audio id="fail_sound1">
+				<source src="sounds/fail_sound1.mp3"></source>
+			</audio>
+			<audio id="fail_sound2">
+				<source src="sounds/fail_sound2.mp3"></source>
+			</audio>
+            <script type="text/javascript" src="js/kbvv_functions.js"></script>          
+	</body>
+</html>
