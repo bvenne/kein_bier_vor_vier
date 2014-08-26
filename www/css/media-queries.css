@@ -19,6 +19,7 @@
 
 /*  smartphones */
 @media only screen and (max-width : 400px)  {
+	#beer_result_wrap { font-size: 2.3em; }
     .countdownHolder { font-size: 2em; }
 }
 
