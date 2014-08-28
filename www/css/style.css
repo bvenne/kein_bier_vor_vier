@@ -827,7 +827,7 @@
 #close_beer_result { display:none; font-size: 18px; padding: 4px 30px; }
 
 /* werbung-slider */
-#werbung {
+.werbung {
     position:relative;
     height:72px;
     margin-top: 2em;
@@ -835,7 +835,7 @@
     margin-right: -15px;
     margin-left:-15px;
 }
-#werbung img#erpels { height: 90px; }
+.werbung img#erpels { height: 90px; }
 
 /** calendar entry */
 #cal_entry, #countdown { padding-bottom: .2em; }
