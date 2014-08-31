@@ -1,12 +1,3 @@
-// using jquerymobile touch event...
-/*
-$.fn.click = function(listener) {
-    return this.each(function() {
-       var $this = $( this );
-       $this.on('vclick', listener);
-    });
-};
-*/
 var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 
 jQuery(function($) {
@@ -22,12 +13,9 @@ jQuery(function($) {
 		},delay_time);
 
 
-		//var beer_time_hours = 16;
 		var beer_start1 = 0;
 		var beer_start2 = 16;
 		var beer_stop = 6;
-
-		//var beer_time_minutes = 0;
 
 		var current_date = new Date();
 		var current_hours = current_date.getHours();
@@ -163,7 +151,6 @@ jQuery(function($) {
 			playSuccessSound();
 		}
 		
-	  
 		return false;
 	});        
 
@@ -174,7 +161,6 @@ jQuery(function($) {
 		$('#close_beer_result').fadeOut("normal");
 		$('.overlayBG').hide();
 	});
-	
 	
 	
 	
@@ -327,7 +313,7 @@ jQuery(function($) {
 
 // Play Random Success
 function playSuccessSound(){
-	var success_sounds = ["success_sound1","success_sound2","success_sound3","success_sound4","success_sound5","success_sound6"];
+	var success_sounds = ["success_sound1","success_sound2","success_sound3","success_sound4","success_sound5","success_sound6","success_sound7","success_sound8","success_sound9","success_sound10"];
 	random_success_sound = success_sounds[Math.floor(Math.random() * success_sounds.length)];
 	setTimeout(function(){
 		//HTML5
@@ -346,7 +332,7 @@ function playSuccessSound(){
 
 // Play Random Fail
 function playFailSound(){
-	var fail_sounds = ["fail_sound1","fail_sound2"];
+	var fail_sounds = ["fail_sound1","fail_sound2","fail_sound3"];
 	random_fail_sound = fail_sounds[Math.floor(Math.random() * fail_sounds.length)];
 	setTimeout(function(){
 		//HTML5
@@ -476,3 +462,19 @@ $(window).scroll(function() {
     }
 
 }).scroll();
+
+//Eigene Werbung
+function WerbeSlideSwitch() {
+	var $active = $('#werbe_slideshow .werbe_slideshow_active');
+	if ( $active.length == 0 ) $active = $('#werbe_slideshow .eigene_werbung:last');
+	var $next =  $active.next().length ? $active.next()
+			: $('#werbe_slideshow .eigene_werbung:first');
+	$active.addClass('last-active');
+	$next.css({opacity: 0.0}).addClass('werbe_slideshow_active').animate({opacity: 1.0}, 1000, function() {
+		$active.removeClass('werbe_slideshow_active last-active');
+	});
+}
+
+$(function() {
+	setInterval( "WerbeSlideSwitch()", 5000 );
+});

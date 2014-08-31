@@ -39,7 +39,7 @@
 	
 	a
 	{
-		color: #43B3E0;
+		color: #FFBF00;
 		text-decoration: underline;
 		-moz-transition: color .2s ease-in-out;
 		-webkit-transition: color .2s ease-in-out;
@@ -50,7 +50,7 @@
 	
 		a:hover
 		{
-			color: #43bff0 !important;
+			color: #FFBF00 !important;
 		}
 
 		a img
@@ -864,7 +864,7 @@ p.datenschutz { line-height: 1.3em; font-size: .9em; }
 #top span#beer_big { margin: 0 20% 1.75em 10%; }
 
 /* toast msg */
-.toast { display:none; color: #fff; opacity: 0.9; background: none repeat scroll 0% 0% #000; margin: 0px 5%; width: 90%; position: fixed; bottom: 1%; padding: 1em; text-align:center; }
+.toast { display:none; color: #fff; opacity: 0.9; background: none repeat scroll 0% 0% #000; margin: 0px 5%; width: 90%; position: fixed; bottom: 1%; padding: 1em; text-align:center; z-index:10; }
 #toast_progress { width: 100%; position: absolute; top: 0; right: 0; height: 2px; background-color: #FFBF00; }
 
 
@@ -960,3 +960,10 @@ p.datenschutz { line-height: 1.3em; font-size: .9em; }
 #countdown_wrapper { margin-top: 2em; }
 #countdown, #countdown .icon { cursor:pointer; }
 #countdown_show { display:none; max-width: 100%; }
+
+/** eigene werbung **/
+.werbe_slideshow_active{ z-index:9; }
+.eigene_werbung {  position:absolute; background: #fff; width:90%; margin: 0 auto; }
+.eigene_werbung a { text-decoration: none; color: #888; }
+
+.impressum { display:none !important; }
