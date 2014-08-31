@@ -966,4 +966,7 @@ p.datenschutz { line-height: 1.3em; font-size: .9em; }
 .eigene_werbung {  position:absolute; background: #fff; width:90%; margin: 0 auto; }
 .eigene_werbung a { text-decoration: none; color: #888; }
 
+.fb_like { border:none; overflow:hidden; height:35px; width: 132px; }
+
 .impressum { display:none !important; }
+.hideforsmall { display:none;}

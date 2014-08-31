@@ -155,12 +155,22 @@
 						<div class="row">
 							<div class="12u">
 								<hr />
-								<h3>Teile diese app.</h3>
-								<ul class="social">
-                                    <li><button class="icon fa-facebook" onclick="window.plugins.socialsharing.shareViaFacebook('Diese App müsst ihr euch unbedingt holen: https://play.google.com/store/apps/details?id=us.vennemann.bier', null, null, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})"><span class="label">Facebook</span></button></li>
-                                    <li><button class="icon fa-twitter" onclick="window.plugins.socialsharing.shareViaTwitter('Diese App müsst ihr euch unbedingt holen: Kein Bier vor vier', null, 'https://play.google.com/store/apps/details?id=us.vennemann.bier')"><span class="label">Twitter</span></button></li>
-                                    <li><button class="icon fa-share-alt" onclick="window.plugins.socialsharing.share('Diese App musst du dir unbedingt holen: https://play.google.com/store/apps/details?id=us.vennemann.bier', 'App: Kein Bier vor vier')"><span class="label">Share</span></button></li>
-								</ul>
+								<div class="hidefordesktop">
+									<h3>Teile diese app.</h3>
+									<ul class="social">
+										<li><button class="icon fa-facebook" onclick="window.plugins.socialsharing.shareViaFacebook('Diese App müsst ihr euch unbedingt holen: https://play.google.com/store/apps/details?id=us.vennemann.bier', null, null, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})"><span class="label">Facebook</span></button></li>
+										<li><button class="icon fa-twitter" onclick="window.plugins.socialsharing.shareViaTwitter('Diese App müsst ihr euch unbedingt holen: Kein Bier vor vier', null, 'https://play.google.com/store/apps/details?id=us.vennemann.bier')"><span class="label">Twitter</span></button></li>
+										<li><button class="icon fa-share-alt" onclick="window.plugins.socialsharing.share('Diese App musst du dir unbedingt holen: https://play.google.com/store/apps/details?id=us.vennemann.bier', 'App: Kein Bier vor vier')"><span class="label">Share</span></button></li>
+									</ul>
+								</div>
+								<div class="hideforsmall">
+									<h3>Like it on facebook</h3>
+									<iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fkeinbiervorvierapp&width&layout=button&action=like&show_faces=false&share=true&height=35&appId=268973263309740" scrolling="no" frameborder="0" allowTransparency="true" class="fb_like"></iframe>
+									<h3>Hol' dir die App</h3>
+									<a href="https://play.google.com/store/apps/details?id=us.vennemann.bier">
+										<img alt="Android app on Google Play" src="images/play_store.png" />
+									</a>
+								</div>
 								<hr />
 							</div>
 						</div>

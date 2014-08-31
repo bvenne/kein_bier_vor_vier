@@ -36,6 +36,8 @@
     #beer_result_wrap { height: 360px; font-size: 3em; padding-top: 1em; }
     .eigene_werbung { text-align: left; margin-left: 11%; width: 45%; }
     .impressum { display: inline-block !important; }
+    .hideforsmall { display:block;}
+    .hidefordesktop { display:none; }
 }
 /*#werbe_slideshow { margin-top: 4em; }margin-left: 18%; width: 33%;*/
 
