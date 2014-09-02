@@ -76,8 +76,11 @@
 							</div>
 						</div>
 					</div>
+					<div id="werbung_braufaesschen" class="hideforsmall">
+					</div>
 				</article>
 			</div>
+			
 		<!-- Einstellungen und Extras -->
 			<div class="wrapper style2">
 				<article id="einstellungen">
@@ -137,8 +140,9 @@
                         <div id="instafeed" class="12u"></div>
                         <span id="load-more" class="button scrolly">Mehr</span>
 					</div>
-					<div class="werbung">
-						<script type="text/javascript" src="http://ad.leadboltads.net/show_app_ad.js?section_id=667875254"></script>
+					<div id="werbung_braufaesschen_small" class="hidefordesktop">
+					</div>
+					<div id="werbung_braufaesschen_2" class="hideforsmall">
 					</div>
 				</article>
 			</div>
@@ -241,5 +245,21 @@
 				<source src="sounds/fail_sound3.mp3"></source>
 			</audio>
             <script type="text/javascript" src="js/kbvv_functions.js"></script> 
+            <script type="text/javascript" src="https://www.adcell.de/js/jsadlib.js"></script>
+			<script type="text/javascript">
+				Adcell.user.setPartnerId("66339");
+				Adcell.user.getAd({
+					"wid":"99365",
+					"id":"werbung_braufaesschen"
+				});
+			    Adcell.user.getAd({
+					"wid":"99364",
+					"id":"werbung_braufaesschen_small"
+				});
+				Adcell.user.getAd({
+					"wid":"99366",
+					"id":"werbung_braufaesschen_2"
+				});
+			</script>
 	</body>
 </html>
