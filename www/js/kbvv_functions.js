@@ -453,7 +453,7 @@ $(window).scroll(function() {
     var windscroll = $(window).scrollTop();
     if (windscroll >= 1) {
         $('article').each(function(i) {
-            if ($(this).position().top <= windscroll + 53) {
+            if ($(this).position().top <= windscroll + 200) {
                 $('nav a.active').removeClass('active');
                 $('nav a').eq(i).addClass('active');
             }
