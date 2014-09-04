@@ -65,6 +65,8 @@
                                 <div id="beer_result_bad">
                                 </div>
                                 <span id="close_beer_result" class="button big scrolly">Schließen</span>
+                                <div id="werbung_betathome_small" class="hidefordesktop"></div>
+                                <div id="werbung_betathome_medium" class="hideforsmall"></div>
                             </div>
 							<a href="#" id="check_for_a_beer" class="button big scrolly">Ist es Zeit für ein Bier?</a>
                             <div class="werbung">
@@ -259,6 +261,16 @@
 				Adcell.user.getAd({
 					"wid":"99366",
 					"id":"werbung_braufaesschen_2"
+				});
+				//bet-at-home
+				Adcell.user.setPartnerId("66339");
+				Adcell.user.getAd({
+					"wid":"104339",
+					"id":"werbung_betathome_small"
+				});
+				Adcell.user.getAd({
+					"wid":"65060",
+					"id":"werbung_betathome_medium"
 				});
 			</script>
 	</body>

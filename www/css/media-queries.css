@@ -1,6 +1,6 @@
 /*  very small devices */
 @media only screen and (max-width : 240px)  {
-    #beer_result_wrap { width: 86%; font-size: 1.5em; max-height: 60%; margin-left: 7%; }
+    #beer_result_wrap { width: 86%; font-size: 1.5em; height: 272px; max-height: 60%; margin-left: 7%; }
     #beer_result_bad p, #beer_result_good p { font-size: 14px !important; }
     #close_beer_result, #send_location { font-size: 16px; }
     #check_for_a_beer { font-size: 1.1em; }
@@ -10,7 +10,7 @@
 
 /*  small devices */
 @media only screen and (max-width : 310px)  {
-    #beer_result_wrap { width: 90%; font-size: 2.1em; max-height: 72%; margin-left: 5%; }
+    #beer_result_wrap { width: 90%; font-size: 2.1em; height: 272px; max-height: 72%; margin-left: 5%; }
     #beer_result_bad p, #beer_result_good p { font-size: 19px !important; }
     #close_beer_result, #send_location { font-size: 19px; }
     #check_for_a_beer { font-size: 1.3em; }
@@ -19,7 +19,7 @@
 
 /*  smartphones */
 @media only screen and (max-width : 400px)  {
-	#beer_result_wrap { font-size: 2.3em; }
+	#beer_result_wrap { font-size: 2.3em; height: 280px; }
     .countdownHolder { font-size: 2em; }
 }
 
@@ -33,7 +33,7 @@
     #beer_big img, #top span#beer_big { max-width: 100%; }
     #check_for_a_beer { padding: 1.2em 1em; margin-top:1em; }
     #load-more { float: none; width: 50%; margin-left: 3.2%; margin-top: 1em; }
-    #beer_result_wrap { height: 360px; font-size: 3em; padding-top: 1em; }
+    #beer_result_wrap { height: 390px; font-size: 3em; padding-top: 1em; }
     .eigene_werbung { text-align: left; margin-left: 11%; width: 45%; }
     .impressum { display: inline-block !important; }
     .hideforsmall { display:block;}
@@ -76,6 +76,7 @@
 @media only screen and (min-width : 1100px)  {
 	.eigene_werbung { margin-left: 16%; }
 	.toast { width:80%; }
+	#beer_result_wrap { height: 430px; width: 50%; left: 25%; }
 }
 
 /**** min-width 1200 ****/

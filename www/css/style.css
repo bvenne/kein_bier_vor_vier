@@ -802,7 +802,7 @@
 #beer_result_wrap {
 	position:fixed;
     width: 93%;
-    height: 260px;
+    height: 320px;
     max-height: 79%;
     /*position: absolute;*/
     /* z-index: 99; */
@@ -976,3 +976,5 @@ p.datenschutz { line-height: 1.3em; font-size: .9em; }
 #werbung_braufaesschen_2 { margin-top: 4em; text-align: center; }
 #werbung_braufaesschen_small { margin-top: 2em; text-align: center; }
 #werbung_braufaesschen img, #werbung_braufaesschen_small img, #werbung_braufaesschen_2 img { max-width: 100%; }
+
+#werbung_betathome_small, #werbung_betathome_medium { margin-top: .8em; }
